@@ -1,0 +1,12 @@
+<h1 align="center">Liste des users</h1>
+
+<table align="center" border="1" class="table table-striped">
+  <tr><th>ID</th><th>Nom</th><th>Email</th><th>City</th><th>Street</th></tr>
+  <tr *ngFor="let user of users">
+    <td>{{user.id}}</td>
+    <td>{{user.name}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.address.city}}</td>
+    <td>{{user.address.street}}</td>
+  </tr>
+</table>
