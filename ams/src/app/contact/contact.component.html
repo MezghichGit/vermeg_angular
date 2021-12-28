@@ -25,4 +25,18 @@ Votre cours est : {{cours}}
 <input type="submit" value="Ajouter" class="btn btn-success"/>
 </form>
 
+<h2 align="center">Ma calculatrice</h2>
+
+<form align="center" #calculatrice="ngForm" (ngSubmit)="calcul(calculatrice)">
+  <label>Taper x : </label><input type="number" name="x" ngModel/>
+  <label>Taper y : </label><input type="number" name="y"  ngModel/>
+  <input type="submit" value="Diviser" class="btn btn-success"/>
+
+  Le résultat de la division est = {{resultat}}
+  <div  *ngIf="divZero==true">
+    <span class="badge badge-danger">Attention division par zéro!!</span>
+    <img [src]="urlImageError" width="100px"/>
+  </div>
+
+  </form>
 
