@@ -12,3 +12,17 @@ Logo sesame :
 <h3>Les evenements</h3>
 Nombre de click = {{nbreClick}}
 <button class="btn btn-primary" (click)="incrementation()">Cliquer</button>
+<h4 *ngIf="test==false">Les services Angular</h4>
+
+<h3>Two way Data Binding</h3>
+<input type="text"  [(ngModel)]="cours"/>
+Votre cours est : {{cours}}
+<h3>Template Driven Forms</h3>
+
+<form #inscription="ngForm" (ngSubmit)="onSubmit(inscription)">
+<label>Votre nom : </label><input type="text" name="nom" ngModel/>
+<label>Votre école : </label><input type="text" name="ecole"  ngModel/>
+<input type="submit" value="Ajouter" class="btn btn-success"/>
+</form>
+
+

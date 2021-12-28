@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { FirstLettreUpperCasePipe } from './first-lettre-upper-case.pipe';
@@ -14,7 +14,8 @@ import { FirstLettreUpperCasePipe } from './first-lettre-upper-case.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

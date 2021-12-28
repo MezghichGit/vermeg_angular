@@ -1,0 +1,2 @@
+cmd1 : ng generate componenent contact ou  ng g c contact
+cmd2 : ng generate pipe firstLettreUpperCase
