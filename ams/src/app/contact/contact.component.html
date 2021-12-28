@@ -40,3 +40,11 @@ Votre cours est : {{cours}}
 
   </form>
 
+<table align="center" border="1" class="table">
+  <tr><th>ID</th><th>Nom</th><th>Post</th></tr>
+  <tr *ngFor="let etudiant of listStudents">
+    <td>{{etudiant.id}}</td>
+    <td>{{etudiant.nom}}</td>
+    <td>{{etudiant.poste}}</td>
+  </tr>
+</table>
